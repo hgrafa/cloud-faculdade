@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hugo Rafael - Desenvolvedor Backend</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="bg-dracula-dark p-4 text-center">
+    <img src="https://avatars.githubusercontent.com/u/35205449?v=4" alt="Hugo Rafael" class="rounded-circle profile-pic mb-3" />
+    <h1 class="display-4 text-dracula-pink">Hugo Rafael</h1>
+    <p class="lead text-dracula-purple">
+      Desenvolvedor Backend | 7 anos Java | 5 anos Node.js | 3 anos AWS | Arquiteto de Sistemas
+    </p>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs nav-tabs-dracula" id="mainTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab"
+          aria-controls="sobre" aria-selected="true">Sobre</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="servicos-tab" data-bs-toggle="tab" data-bs-target="#servicos" type="button" role="tab"
+          aria-controls="servicos" aria-selected="false">Serviços</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contato-tab" data-bs-toggle="tab" data-bs-target="#contato" type="button" role="tab"
+          aria-controls="contato" aria-selected="false">Contato</button>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content bg-dracula-dark p-4 rounded-bottom shadow-sm" id="mainTabsContent">
+      <!-- SOBRE -->
+      <section class="tab-pane fade show active" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+        <h2 class="text-dracula-cyan mb-3">Sobre Mim</h2>
+        <p class="text-dracula-gray lead">
+          Olá! Sou o Hugo Rafael, um desenvolvedor backend apaixonado por criar sistemas robustos e escaláveis. Com 7 anos
+          de experiência em Java e 5 anos em Node.js, atuo em projetos que vão desde APIs RESTful até microsserviços em
+          nuvem.
+        </p>
+        <p class="text-dracula-gray">
+          Tenho uma sólida vivência em AWS, onde implementei soluções com Lambda, API Gateway, DynamoDB e serviços de
+          infraestrutura como código usando CloudFormation e Terraform. Minha abordagem foca em performance, segurança
+          e manutenção sustentável.
+        </p>
+        <p class="text-dracula-gray">
+          Além da programação, adoro colaborar em mentorias, workshops e compartilhar boas práticas com a comunidade.
+        </p>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section class="tab-pane fade" id="servicos" role="tabpanel" aria-labelledby="servicos-tab">
+        <h2 class="text-dracula-cyan mb-4">Meus Serviços</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card bg-dracula-purple text-light h-100">
+              <div class="card-body">
+                <h5 class="card-title text-dracula-pink">Desenvolvimento Backend</h5>
+                <p class="card-text">
+                  Desenvolvimento de APIs e microsserviços escaláveis usando Java Spring Boot, Node.js (Express), e
+                  bancos SQL e NoSQL.
+                </p>
+                <ul class="text-dracula-gray">
+                  <li>API REST & GraphQL</li>
+                  <li>Design orientado a domínio (DDD)</li>
+                  <li>Testes automatizados (unitários e integração)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dracula-blue text-light h-100">
+              <div class="card-body">
+                <h5 class="card-title text-dracula-pink">Arquitetura AWS & DevOps</h5>
+                <p class="card-text">
+                  Projetos na AWS utilizando Lambda, S3, DynamoDB, API Gateway, ECS, e CloudFormation/Terraform para
+                  automação.
+                </p>
+                <ul class="text-dracula-gray">
+                  <li>Infraestrutura como código (IaC)</li>
+                  <li>Automação CI/CD com GitHub Actions</li>
+                  <li>Monitoramento e alertas com CloudWatch</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card bg-dracula-green text-light h-100">
+              <div class="card-body">
+                <h5 class="card-title text-dracula-pink">Mentoria e Treinamentos</h5>
+                <p class="card-text">
+                  Mentorias personalizadas para times e desenvolvedores focando backend, AWS, boas práticas e metodologia
+                  ágil.
+                </p>
+                <ul class="text-dracula-gray">
+                  <li>Workshops online e presenciais</li>
+                  <li>Preparação para certificações AWS</li>
+                  <li>Revisões de código e arquitetura</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="tab-pane fade" id="contato" role="tabpanel" aria-labelledby="contato-tab">
+        <h2 class="text-dracula-cyan mb-3">Contato</h2>
+        <p class="text-dracula-gray mb-4">
+          Gostaria de conversar sobre projetos, ideias ou mentorias? Use o formulário abaixo para me enviar uma mensagem.
+          Responderei o mais rápido possível!
+        </p>
+        <form id="form-contato" novalidate>
+          <div class="mb-3">
+            <label for="nome" class="form-label text-dracula-pink">Nome</label>
+            <input type="text" class="form-control bg-dracula-input text-light" id="nome" placeholder="Seu nome" required />
+            <div class="invalid-feedback text-dracula-pink">Por favor, insira seu nome.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label text-dracula-pink">E-mail</label>
+            <input type="email" class="form-control bg-dracula-input text-light" id="email" placeholder="Seu e-mail" required />
+            <div class="invalid-feedback text-dracula-pink">Por favor, insira um e-mail válido.</div>
+          </div>
+          <button type="submit" class="btn btn-dracula-pink w-100">Enviar Mensagem</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-dracula-dark text-center text-dracula-gray py-3 mt-5">
+    <small>&copy; 2025 Hugo Rafael. Todos os direitos reservados.</small>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS Personalizado -->
+  <script src="script.js"></script>
+</body>
+
+</html>

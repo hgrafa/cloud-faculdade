@@ -1,0 +1,21 @@
+{
+  "name": "Hugo Rafael Web Dev Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-18",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ecmel.vscode-html-css",            // Emmet para HTML/CSS avançado
+        "formulahendry.auto-close-tag",     // Fecha automaticamente tags HTML
+        "formulahendry.auto-rename-tag",    // Renomeia tags automaticamente
+        "ritwickdey.LiveServer",             // Live Server para preview em tempo real
+        "ms-vscode.vscode-typescript-next"  // Melhor suporte a JS/TS
+      ]
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "remoteUser": "node"
+}
