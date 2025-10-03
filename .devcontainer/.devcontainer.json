@@ -8,11 +8,11 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "ecmel.vscode-html-css",            // Emmet para HTML/CSS avançado
-        "formulahendry.auto-close-tag",     // Fecha automaticamente tags HTML
-        "formulahendry.auto-rename-tag",    // Renomeia tags automaticamente
-        "ritwickdey.LiveServer",             // Live Server para preview em tempo real
-        "ms-vscode.vscode-typescript-next"  // Melhor suporte a JS/TS
+        "ecmel.vscode-html-css",            
+        "formulahendry.auto-close-tag",     
+        "formulahendry.auto-rename-tag",    
+        "ritwickdey.LiveServer",             
+        "ms-vscode.vscode-typescript-next"  
       ]
     }
   },
